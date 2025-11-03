@@ -66,7 +66,7 @@ export default function PhotosList() {
             {/* Header */}
             <Flex justify="space-between" align="center">
               <Box>
-                <Heading mb={2}>📸 Galería de Fotos</Heading>
+                <Heading mb={2}>Galería de Fotos</Heading>
                 <Text color="gray.600">
                   Tus fotos familiares y recuerdos importantes
                 </Text>
@@ -132,7 +132,7 @@ export default function PhotosList() {
                       window.location.href = "/photos/upload";
                     }}
                   >
-                    Subir tu primera foto
+                    Subir foto
                   </Button>
                 )}
               </Box>

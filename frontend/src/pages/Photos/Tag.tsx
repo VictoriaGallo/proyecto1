@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Flex, VStack, Card, CardBody, Button, Alert, AlertIcon } from "@chakra-ui/react";
+import { Box, Heading, Text, Flex, VStack, HStack, Card, CardBody, Button, Alert, AlertIcon } from "@chakra-ui/react";
 import { Navbar } from "../../components/Layout/Navbar";
 import { Sidebar } from "../../components/Layout/Sidebar";
 import { PhotoTagger } from "../../components/PhotoTagging/PhotoTagger";
@@ -95,7 +95,7 @@ export default function PhotosTag() {
         <Box flex="1" p={6}>
           <VStack spacing={6} align="stretch">
             <Box>
-              <Heading mb={2}>🏷️ Etiquetar Fotos</Heading>
+              <Heading mb={2}>Etiquetar Fotos</Heading>
               <Text color="gray.600">
                 Organiza tus fotos agregando etiquetas y metadatos detallados
               </Text>
@@ -110,16 +110,16 @@ export default function PhotosTag() {
                   
                   <VStack spacing={3} align="start" w="full">
                     <Text fontSize="sm" color="gray.600">
-                      <strong>🎯 Mejor organización:</strong> Encuentra fotos específicas más fácilmente
+                      <strong>Mejor organización:</strong> Encuentra fotos específicas más fácilmente
                     </Text>
                     <Text fontSize="sm" color="gray.600">
-                      <strong>📊 Análisis mejorado:</strong> Los reportes serán más precisos y detallados
+                      <strong>Análisis mejorado:</strong> Los reportes serán más precisos y detallados
                     </Text>
                     <Text fontSize="sm" color="gray.600">
-                      <strong>🔍 Búsqueda rápida:</strong> Filtra por personas, lugares, eventos o emociones
+                      <strong>Búsqueda rápida:</strong> Filtra por personas, lugares, eventos o emociones
                     </Text>
                     <Text fontSize="sm" color="gray.600">
-                      <strong>📈 Seguimiento:</strong> Monitorea cambios en el reconocimiento de elementos
+                      <strong>Seguimiento:</strong> Monitorea cambios en el reconocimiento de elementos
                     </Text>
                   </VStack>
                 </VStack>
@@ -129,7 +129,7 @@ export default function PhotosTag() {
             <Card>
               <CardBody>
                 <VStack spacing={4}>
-                  <Text fontWeight="bold">📸 Selecciona una foto para etiquetar:</Text>
+                  <Text fontWeight="bold">Selecciona una foto para etiquetar:</Text>
                   
                   {/* Demo: Foto de ejemplo */}
                   <Box 
@@ -159,7 +159,7 @@ export default function PhotosTag() {
                     size="lg"
                     onClick={handleStartTagging}
                   >
-                    🏷️ Iniciar Etiquetado
+                    Iniciar Etiquetado
                   </Button>
                 </VStack>
               </CardBody>
@@ -168,26 +168,26 @@ export default function PhotosTag() {
             <Card>
               <CardBody>
                 <VStack spacing={3} align="start">
-                  <Text fontWeight="bold">💡 Tipos de etiquetas disponibles:</Text>
+                  <Text fontWeight="bold">Tipos de etiquetas disponibles:</Text>
                   <VStack align="start" spacing={2} fontSize="sm" color="gray.600">
                     <HStack>
-                      <Text fontWeight="bold" color="blue.500">👤 Personas:</Text>
+                      <Text fontWeight="bold" color="blue.500">Personas:</Text>
                       <Text>Nombres de familiares, amigos, conocidos</Text>
                     </HStack>
                     <HStack>
-                      <Text fontWeight="bold" color="green.500">📍 Lugares:</Text>
+                      <Text fontWeight="bold" color="green.500">Lugares:</Text>
                       <Text>Casa, parque, restaurante, ciudad, país</Text>
                     </HStack>
                     <HStack>
-                      <Text fontWeight="bold" color="purple.500">🏷️ Objetos:</Text>
+                      <Text fontWeight="bold" color="purple.500">Objetos:</Text>
                       <Text>Comida, ropa, muebles, vehículos, regalos</Text>
                     </HStack>
                     <HStack>
-                      <Text fontWeight="bold" color="orange.500">📅 Eventos:</Text>
+                      <Text fontWeight="bold" color="orange.500">Eventos:</Text>
                       <Text>Cumpleaños, bodas, vacaciones, reuniones</Text>
                     </HStack>
                     <HStack>
-                      <Text fontWeight="bold" color="red.500">❤️ Emociones:</Text>
+                      <Text fontWeight="bold" color="red.500">Emociones:</Text>
                       <Text>Feliz, nostálgico, emocionado, tranquilo</Text>
                     </HStack>
                   </VStack>

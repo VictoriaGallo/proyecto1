@@ -35,7 +35,7 @@ export default function ReportsTrends() {
         <Box flex="1" p={6}>
           <VStack spacing={6} align="stretch">
             <Box>
-              <Heading mb={2}>📈 Tendencias y Progreso</Heading>
+              <Heading mb={2}>Tendencias y Progreso</Heading>
               <Text color="gray.600">
                 Monitorea tu progreso y compara con tu línea base
               </Text>

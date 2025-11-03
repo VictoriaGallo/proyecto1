@@ -40,7 +40,7 @@ export default function PhotosUpload() {
         <Box flex="1" p={6}>
           <VStack spacing={6} align="stretch">
             <Box>
-              <Heading mb={2}>📸 Subir Fotos Familiares</Heading>
+              <Heading mb={2}>Subir Fotos Familiares</Heading>
               <Text color="gray.600">
                 Sube fotos de familia, amigos y lugares importantes para crear tu galería personal.
               </Text>
@@ -72,7 +72,7 @@ export default function PhotosUpload() {
             <Card>
               <CardBody>
                 <VStack spacing={3} align="start">
-                  <Text fontWeight="bold">💡 Consejos para mejores resultados:</Text>
+                  <Text fontWeight="bold">Consejos para mejores resultados:</Text>
                   <VStack align="start" spacing={1} fontSize="sm" color="gray.600">
                     <Text>• Sube fotos de personas que conozcas bien</Text>
                     <Text>• Incluye fotos de diferentes épocas de tu vida</Text>

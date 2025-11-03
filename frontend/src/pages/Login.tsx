@@ -45,8 +45,8 @@ export default function Login() {
     <Container maxW="md" py={16}>
       <VStack spacing={6}>
         <Box textAlign="center">
-          <Heading size="lg" color="blue.500" mb={2}>
-            DoYouRemember
+          <Heading size="lg" color="orange.500" mb={2}>
+            AlzheimerApp
           </Heading>
           <Text color="gray.600" mb={6}>
             Detección temprana de Alzheimer
@@ -57,7 +57,7 @@ export default function Login() {
         
         <VStack spacing={4} w="full">
           <FormControl>
-            <FormLabel>Selecciona tu rol para la demo:</FormLabel>
+            <FormLabel>Cual es tu tipo de Usuario?</FormLabel>
             <Select 
               value={selectedRole} 
               onChange={(e) => setSelectedRole(e.target.value as Role)}
@@ -83,12 +83,12 @@ export default function Login() {
           </Box>
           
           <Button 
-            colorScheme="blue" 
+            colorScheme="orange" 
             size="lg" 
             w="full"
             onClick={handleDemoLogin}
           >
-            Entrar como {selectedRole}
+            Iniciar sesión como {selectedRole}
           </Button>
           
         </VStack>

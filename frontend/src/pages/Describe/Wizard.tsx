@@ -78,7 +78,7 @@ export default function DescribeWizard() {
         <Box flex="1" p={6}>
           <VStack spacing={6} align="stretch">
             <Box>
-              <Heading mb={2}>🧙‍♂️ Asistente de Descripción</Heading>
+              <Heading mb={2}>Asistente de Descripción</Heading>
               <Text color="gray.600">
                 Te guiaremos paso a paso para describir tus fotos de manera detallada
               </Text>
@@ -115,7 +115,7 @@ export default function DescribeWizard() {
             <Card>
               <CardBody>
                 <VStack spacing={4}>
-                  <Text fontWeight="bold">📸 Selecciona una foto para describir:</Text>
+                  <Text fontWeight="bold">Selecciona una foto para describir:</Text>
                   
                   {/* Demo: Foto de ejemplo */}
                   <Box 
@@ -145,7 +145,7 @@ export default function DescribeWizard() {
                     size="lg"
                     onClick={handleStartWizard}
                   >
-                    🚀 Iniciar Asistente de Descripción
+                    Iniciar Asistente de Descripción
                   </Button>
                 </VStack>
               </CardBody>
@@ -154,7 +154,7 @@ export default function DescribeWizard() {
             <Card>
               <CardBody>
                 <VStack spacing={3} align="start">
-                  <Text fontWeight="bold">💡 Consejos para mejores descripciones:</Text>
+                  <Text fontWeight="bold">Consejos para mejores descripciones:</Text>
                   <VStack align="start" spacing={1} fontSize="sm" color="gray.600">
                     <Text>• Tómate tu tiempo en cada paso</Text>
                     <Text>• Sé específico con nombres y lugares</Text>

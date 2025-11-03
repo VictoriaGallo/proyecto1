@@ -12,7 +12,7 @@ export function Navbar() {
   return (
     <Box bg="blue.500" color="white" p={4}>
       <Flex align="center">
-        <Heading size="md">DoYouRemember</Heading>
+        <Heading size="md">Azheimerapp</Heading>
         <Spacer />
         <Button variant="outline" colorScheme="white" onClick={handleSignOut}>
           Cerrar sesión
