@@ -93,9 +93,9 @@ export function CaregiverManager({ patientId, canManage = false }: CaregiverMana
     {
       id: "inv-1",
       patientId: patientId,
-      caregiverEmail: "maria@ejemplo.com",
+      caregiverEmail: "eliana@ejemplo.com",
       relationship: "Hija",
-      message: "Soy tu hija María, me gustaría ayudarte con la aplicación.",
+      message: "Soy tu hija eliana, me gustaría ayudarte con la aplicación.",
       status: "pending",
       expiresAt: "2023-11-01",
       createdAt: "2023-10-22",
@@ -192,13 +192,13 @@ export function CaregiverManager({ patientId, canManage = false }: CaregiverMana
       {/* Header */}
       <HStack justify="space-between">
         <Box>
-          <Heading size="md">👨‍👩‍👧‍👦 Gestión de Cuidadores</Heading>
+          <Heading size="md">Gestión de Cuidadores</Heading>
           <Text color="gray.600">
             Administra los cuidadores vinculados a este paciente
           </Text>
         </Box>
         {canManage && (
-          <Button leftIcon={<FaUserPlus />} colorScheme="blue" onClick={onOpen}>
+          <Button leftIcon={<FaUserPlus />} colorScheme="orange" onClick={onOpen}>
             Invitar Cuidador
           </Button>
         )}
@@ -389,7 +389,7 @@ export function CaregiverManager({ patientId, canManage = false }: CaregiverMana
             <Button variant="ghost" mr={3} onClick={onClose}>
               Cancelar
             </Button>
-            <Button colorScheme="blue" onClick={handleSendInvitation}>
+            <Button colorScheme="orange" onClick={handleSendInvitation}>
               Enviar Invitación
             </Button>
           </ModalFooter>
