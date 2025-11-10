@@ -34,7 +34,7 @@ export default function Onboarding() {
                 <VStack align="start" spacing={1}>
                   <Text fontWeight="bold">¡Configuración completada!</Text>
                   <Text fontSize="sm">
-                    Tu perfil ha sido configurado. Ahora puedes comenzar a usar DoYouRemember.
+                    Tu perfil ha sido configurado correctamente.
                   </Text>
                 </VStack>
               </Alert>
@@ -42,10 +42,10 @@ export default function Onboarding() {
               <VStack spacing={4} align="start">
                 <Heading size="md">Próximos pasos:</Heading>
                 <VStack align="start" spacing={2} fontSize="sm" color="gray.600">
-                  <Text>• Sube más fotos familiares a tu galería</Text>
-                  <Text>• Comienza a describir tus fotos usando el asistente</Text>
-                  <Text>• Configura tus recordatorios en la sección de alertas</Text>
-                  <Text>• Revisa tus reportes de progreso regularmente</Text>
+                  <Text>Sube más fotos familiares a tu galería</Text>
+                  <Text>Comienza a describir tus fotos usando el asistente</Text>
+                  <Text>Configura tus recordatorios en la sección de alertas</Text>
+                  <Text>Reportes de progreso</Text>
                 </VStack>
               </VStack>
             </VStack>
