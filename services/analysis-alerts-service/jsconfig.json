@@ -1,0 +1,16 @@
+﻿{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "checkJs": false,
+    "allowJs": true,
+    "esModuleInterop": true
+  },
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*",
+    "**/dist/*",
+    "**/build/*"
+  ]
+}
