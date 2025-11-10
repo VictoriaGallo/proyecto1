@@ -79,8 +79,8 @@ export function OnboardingWizard({ onComplete, onSkip }: OnboardingWizardProps) 
   const steps: OnboardingStep[] = [
     {
       id: "welcome",
-      title: "¡Bienvenido a DoYouRemember!",
-      description: "Te ayudaremos a configurar tu perfil",
+      title: "¡Bienvenido a AlzheimerApp!",
+      description: "Configura tu perfil",
       icon: <FaUser />,
       required: false
     },
@@ -169,15 +169,15 @@ export function OnboardingWizard({ onComplete, onSkip }: OnboardingWizardProps) 
         return (
           <VStack spacing={6} textAlign="center">
             <Image
-              src="https://via.placeholder.com/200x200/4A90E2/FFFFFF?text=🧠"
-              alt="DoYouRemember Logo"
+              src="imagen/portada.svg"
+              alt="AlzheimerApp Logo"
               boxSize="150px"
               borderRadius="full"
             />
             
             <VStack spacing={4}>
               <Text fontSize="2xl" fontWeight="bold" color="blue.500">
-                ¡Bienvenido a DoYouRemember!
+                ¡Bienvenido a Alzheimer!
               </Text>
               <Text color="gray.600" maxW="md">
                 Te ayudaremos a configurar tu perfil y establecer tu línea base para monitorear tu memoria de manera efectiva.
@@ -187,10 +187,10 @@ export function OnboardingWizard({ onComplete, onSkip }: OnboardingWizardProps) 
             <VStack spacing={3} align="start" maxW="md">
               <Text fontWeight="bold">¿Que haremos?</Text>
               <VStack spacing={2} align="start" fontSize="sm" color="gray.600">
-                <Text>• Configurar tu información personal</Text>
-                <Text>• Establecer tus preferencias de recordatorios</Text>
-                <Text>• Crear tu línea base con fotos familiares</Text>
-                <Text>• Definir tus objetivos de seguimiento</Text>
+                <Text>Configurar tu información personal</Text>
+                <Text>Establecer tus preferencias de recordatorios</Text>
+                <Text>Crear tu línea base con fotos familiares</Text>
+                <Text>Definir tus objetivos de seguimiento</Text>
               </VStack>
             </VStack>
           </VStack>
@@ -414,7 +414,7 @@ export function OnboardingWizard({ onComplete, onSkip }: OnboardingWizardProps) 
         <Text color="gray.600" mb={4}>
           {steps[currentStep].description}
         </Text>
-        <Progress value={progress} w="full" colorScheme="blue" size="lg" />
+        <Progress value={progress} w="full" colorScheme="orange" size="lg" />
         <Text fontSize="sm" color="gray.500" mt={2}>
           Paso {currentStep + 1} de {steps.length}
         </Text>
@@ -465,7 +465,7 @@ export function OnboardingWizard({ onComplete, onSkip }: OnboardingWizardProps) 
         <Button
           rightIcon={currentStep === steps.length - 1 ? <FaCheck /> : <FaArrowRight />}
           onClick={nextStep}
-          colorScheme="blue"
+          colorScheme="orange"
           isDisabled={!canProceed()}
         >
           {currentStep === steps.length - 1 ? "Completar" : "Siguiente"}
