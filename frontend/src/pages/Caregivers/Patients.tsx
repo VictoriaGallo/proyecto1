@@ -226,25 +226,24 @@ export default function CaregiversPatients() {
             )}
 
             {/* Información adicional */}
-            <Box p={4} bg="green.50" borderRadius="md">
+            <Box p={4} bg="gray.100" borderRadius="md">
               <VStack spacing={3} align="start">
                 <Text fontWeight="bold">
-                  {user?.role === "doctor" ? "💡 Como médico puedes:" : "💡 Como cuidador puedes:"}
+                  {user?.role === "doctor" ? "Como médico puedes:" : "Como cuidador puedes:"}
                 </Text>
                 <VStack align="start" spacing={1} fontSize="sm" color="gray.600">
                   {user?.role === "doctor" ? (
                     <>
-                      <Text>• Ver el progreso y reportes de todos los pacientes</Text>
-                      <Text>• Generar reportes detallados y análisis</Text>
-                      <Text>• Configurar políticas de alertas globales</Text>
-                      <Text>• Exportar datos para análisis médico</Text>
+                      <Text>Ver el progreso y reportes de todos los pacientes</Text>
+                      <Text>Generar reportes</Text>
+                      <Text>Exportar datos</Text>
                     </>
                   ) : (
                     <>
-                      <Text>• Ver el progreso y reportes de tus pacientes</Text>
-                      <Text>• Subir fotos en nombre del paciente</Text>
-                      <Text>• Configurar recordatorios para sesiones</Text>
-                      <Text>• Recibir alertas sobre cambios importantes</Text>
+                      <Text>Ver el progreso y reportes de tu persona a cargo osea el paciente</Text>
+                      <Text>Subir fotos en nombre del paciente</Text>
+                      <Text>Configurar recordatorios para sesiones</Text>
+                      <Text>Recibir alertas sobre cambios importantes</Text>
                     </>
                   )}
                 </VStack>
