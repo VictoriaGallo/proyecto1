@@ -340,7 +340,7 @@ export function ReportFilters({
                           onChange={(e) => handleFilterChange("sortBy", e.target.value)}
                         >
                           <option value="date">Fecha</option>
-                          <option value="recall">Recall</option>
+                          <option value="recall">Recodar</option>
                           <option value="coherence">Coherencia</option>
                           <option value="sessions">Sesiones</option>
                         </Select>
@@ -371,7 +371,7 @@ export function ReportFilters({
               <Button variant="ghost" onClick={onClose}>
                 Cancelar
               </Button>
-              <Button colorScheme="blue" onClick={handleApplyFilters}>
+              <Button colorScheme="orange" onClick={handleApplyFilters}>
                 Aplicar Filtros
               </Button>
             </HStack>
