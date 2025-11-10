@@ -106,7 +106,7 @@ export function PhotoGallery({
       storagePath: "demo/path/3",
       tags: ["amigos", "reunión"],
       createdAt: "2024-01-05T20:00:00Z",
-      description: "Reunión con mis amigos de la universidad",
+      description: "Reunión de carne a la parrila con amigos",
       uploadedBy: "Cuidador"
     }
   ];
@@ -118,11 +118,11 @@ export function PhotoGallery({
         {demoPhotos.map((photo) => {
           const status = getPhotoStatus(photo);
           return (
-            <Card key={photo.id} overflow="hidden" cursor="pointer" _hover={{ shadow: "lg" }}>
+            <Card overflow="hidden" cursor="pointer" _hover={{ shadow: "lg" }}>
               <Box position="relative">
                 <Image
-                  src={`https://via.placeholder.com/300x200/4A90E2/FFFFFF?text=Foto+${photo.id}`}
-                  alt={`Foto ${photo.id}`}
+                  src={`imagen/cumple.jpg`}
+                  alt={`Foto de cumpleaños`}
                   w="full"
                   h="200px"
                   objectFit="cover"
@@ -258,8 +258,8 @@ export function PhotoGallery({
               <VStack spacing={4}>
                 {/* Imagen grande */}
                 <Image
-                  src={`https://via.placeholder.com/500x300/4A90E2/FFFFFF?text=Foto+${selectedPhoto.id}`}
-                  alt={`Foto ${selectedPhoto.id}`}
+                  src={`imagen/cumple.jpg`}
+                  alt={`Foto`}
                   w="full"
                   maxH="300px"
                   objectFit="cover"
