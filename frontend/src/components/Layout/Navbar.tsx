@@ -10,9 +10,9 @@ export function Navbar() {
   };
 
   return (
-    <Box bg="blue.500" color="white" p={4}>
+    <Box bg="orange.500" color="white" p={4}>
       <Flex align="center">
-        <Heading size="md">Azheimerapp</Heading>
+        <Heading size="md">AzheimerApp</Heading>
         <Spacer />
         <Button variant="outline" colorScheme="white" onClick={handleSignOut}>
           Cerrar sesión
